@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+    <ProjectGuid>{08A81C53-D2D2-4CFD-AA1C-C708EFF888DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <DefaultClrNameSpace>CaRo_Game</DefaultClrNameSpace>
+    <RootNamespace>CaRo_Game</RootNamespace>
+    <AssemblyName>CaRo_Game</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.*</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <AlwaysCompileMarkupFilesInSeparateDomain>false</AlwaysCompileMarkupFilesInSeparateDomain>
+    <ApplicationIcon>Application.ico</ApplicationIcon>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="cls5OWin.cs" />
+    <Compile Include="clsBanCo.cs" />
+    <Compile Include="clsLuongGiaBanCo.cs" />
+    <Compile Include="clsOption.cs" />
+    <Compile Include="clsVideo.cs" />
+    <Compile Include="hinhvuong.xaml.cs">
+      <DependentUpon>hinhvuong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Image\Chess\ChessO_1.xaml.cs">
+      <DependentUpon>ChessO_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Image\Chess\ChessO_2.xaml.cs">
+      <DependentUpon>ChessO_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Image\Chess\ChessO_3.xaml.cs">
+      <DependentUpon>ChessO_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Image\Chess\ChessX_1.xaml.cs">
+      <DependentUpon>ChessX_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Image\Chess\ChessX_2.xaml.cs">
+      <DependentUpon>ChessX_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Image\Chess\ChessX_3.xaml.cs">
+      <DependentUpon>ChessX_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="hinhvuong.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Image\Chess\ChessO_1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Image\Chess\ChessO_2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Image\Chess\ChessO_3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Image\Chess\ChessX_1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Image\Chess\ChessX_2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Image\Chess\ChessX_3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <None Include="app.config" />
+    <None Include="Application.ico">
+      <Visible>false</Visible>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\About\Group.png" />
+    <Resource Include="Image\About\Image_Song.png" />
+    <Resource Include="Image\About\NgoAnhDuc.png" />
+    <Resource Include="Image\About\NguyenHoanSong.png" />
+    <Resource Include="Image\About\ProjectCaRo.png" />
+    <Resource Include="Image\About\Teacher.png" />
+    <Resource Include="Image\About\UIT.png" />
+    <Resource Include="Image\About\VNU.png" />
+    <Resource Include="Image\About\VoDuyLinh.png" />
+    <Resource Include="Image\About\VoThaiLiem.png" />
+    <Resource Include="Image\BackGround\Autumn_BG.jpg" />
+    <Resource Include="Image\BackGround\Green_BG.jpg" />
+    <Resource Include="Image\BackGround\Main_BG.jpg" />
+    <Resource Include="Image\BackGround\Spring_BG.jpg" />
+    <Resource Include="Image\Button_Back\Back.png" />
+    <Resource Include="Image\Button_Back\Button_Resume.png" />
+    <Resource Include="Image\Button_Back\FirstBack.png" />
+    <Resource Include="Image\Chess\Chess_0_1.png" />
+    <Resource Include="Image\Chess\Chess_0_2.png" />
+    <Resource Include="Image\Chess\Chess_0_3.png" />
+    <Resource Include="Image\Chess\Chess_X_1.png" />
+    <Resource Include="Image\Chess\Chess_X_2.png" />
+    <Resource Include="Image\Chess\Chess_X_3.png" />
+    <Resource Include="Image\Control\PausePressed.png" />
+    <Resource Include="Image\Control\PausePressed_Over.png" />
+    <Resource Include="Image\Control\Play.png" />
+    <Resource Include="Image\Control\PlayPressed.png" />
+    <Resource Include="Image\Control\PlayPressed_Over.png" />
+    <Resource Include="Image\Control\Play_Over.png" />
+    <Resource Include="Image\Control\Recycle Bin %28Empty%29.png" />
+    <Resource Include="Image\Control\StepForwardDisabled.png" />
+    <Resource Include="Image\Control\StepForwardNormalBlue.png" />
+    <Resource Include="Image\Control\VolumePressedBlue.png" />
+    <Resource Include="Image\Control\VolumePressedBlue_Over.png" />
+    <Resource Include="Image\GamePlay\BG.png" />
+    <Resource Include="Image\GamePlay\BG_image.png" />
+    <Resource Include="Image\GamePlay\Computer.png" />
+    <Resource Include="Image\GamePlay\Human.png" />
+    <Resource Include="Image\GamePlay\Question.png" />
+    <Resource Include="Image\GamePlay\Text_Computer.png" />
+    <Resource Include="Image\GamePlay\Text_Human.png" />
+    <Resource Include="Image\Imformation_To_Play\BG_Name.png" />
+    <Resource Include="Image\Imformation_To_Play\BG_OK.png" />
+    <Resource Include="Image\Imformation_To_Play\Name.png" />
+    <Resource Include="Image\Imformation_To_Play\OK.png" />
+    <Resource Include="Image\Intro\BG.png" />
+    <Resource Include="Image\Intro\BG_Play.png" />
+    <Resource Include="Image\Intro\Bye.png" />
+    <Resource Include="Image\Intro\Gomoku.png" />
+    <Resource Include="Image\Intro\Play.png" />
+    <Resource Include="Image\Intro\UITStudent.png" />
+    <Resource Include="Image\Load\Eror.png" />
+    <Resource Include="Image\Load\ListLoad.png" />
+    <Resource Include="Image\Load\Load.png" />
+    <Resource Include="Image\Load\Load_BG.png" />
+    <Resource Include="Image\Main_Play\BG_PA.png" />
+    <Resource Include="Image\Main_Play\BG_PB.png" />
+    <Resource Include="Image\Main_Play\MP_BG_Core.png" />
+    <Resource Include="Image\Main_Play\MP_BG_CoreA.png" />
+    <Resource Include="Image\Main_Play\MP_BG_CoreB.png" />
+    <Resource Include="Image\Main_Play\MP_BG_Gomoku.png" />
+    <Resource Include="Image\Main_Play\MP_BG_Menu.png" />
+    <Resource Include="Image\Main_Play\MP_BG_Status.png" />
+    <Resource Include="Image\Main_Play\MP_BG_Time.png" />
+    <Resource Include="Image\Main_Play\MP_Gomoku.png" />
+    <Resource Include="Image\Main_Play\MP_Menu.png" />
+    <Resource Include="Image\Main_Play\MP_UIT.png" />
+    <Resource Include="Image\Main_Play\Pause.png" />
+    <Resource Include="Image\Main_Play\Search-icon.png.gif" />
+    <Resource Include="Image\Menu\About.png" />
+    <Resource Include="Image\Menu\About_Over.png" />
+    <Resource Include="Image\Menu\BG_About.png" />
+    <Resource Include="Image\Menu\BG_Load.png" />
+    <Resource Include="Image\Menu\BG_menu.png" />
+    <Resource Include="Image\Menu\BG_New.png" />
+    <Resource Include="Image\Menu\BG_option.png" />
+    <Resource Include="Image\Menu\BG_RePlay.png" />
+    <Resource Include="Image\Menu\BG_Save.png" />
+    <Resource Include="Image\Menu\Exit.png" />
+    <Resource Include="Image\Menu\Load.png" />
+    <Resource Include="Image\Menu\Load_Over.png" />
+    <Resource Include="Image\Menu\new.png" />
+    <Resource Include="Image\Menu\new_over.png" />
+    <Resource Include="Image\Menu\Option.png" />
+    <Resource Include="Image\Menu\Option_Over.png" />
+    <Resource Include="Image\Menu\Replay.png" />
+    <Resource Include="Image\Menu\Replay_Over.png" />
+    <Resource Include="Image\Menu\Savev.png" />
+    <Resource Include="Image\Menu\Save_Over.png" />
+    <Resource Include="Image\Mouse\Default.cur" />
+    <Resource Include="Image\Mouse\Hand_Mouse.cur" />
+    <Resource Include="Image\Mouse\Play.cur" />
+    <Resource Include="Image\Option\Op_BG.png" />
+    <Resource Include="Image\Option\Op_Text.png" />
+    <Resource Include="Image\Rectangle\R_Line.png" />
+    <Resource Include="Image\Lose\Continous.png" />
+    <Resource Include="Image\Lose\Continous_Text.png" />
+    <Resource Include="Image\Lose\Crying.png" />
+    <Resource Include="Image\Lose\Lose.png" />
+    <Resource Include="Image\Lose\RePlay.png" />
+    <Resource Include="Image\Lose\RePlay_Text.png" />
+    <Resource Include="Image\Save\Cancel.png" />
+    <Resource Include="Image\Save\Save.png" />
+    <Resource Include="Image\Save\Save_BG.png" />
+    <Resource Include="Image\Save\Save_BG_Cancle.png" />
+    <Resource Include="Image\Save\Save_BG_Save.png" />
+    <Resource Include="Image\Win\BG_Win.png" />
+    <Resource Include="Image\Win\Continous_Win.png" />
+    <Resource Include="Image\Win\Laugh.png" />
+    <Resource Include="Image\Win\RePlay_Win.png" />
+    <Resource Include="Image\Win\Win_Con_Text.png" />
+    <Resource Include="Image\Win\Win_Replay_Text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Music\Lemon Tree .mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\Dan Sao Hau Giang.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\Tinh_am_chieu_que.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Voices\button-28.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Voices\Cry.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Voices\boing.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Voices\Chess1.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Voices\Chess2.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Voices\Laugh.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+		 Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>
